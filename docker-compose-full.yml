@@ -29,13 +29,13 @@ services:
       - caddy-network
 
 
-  watchtower:
-    image: containrrr/watchtower
-    container_name: Watchtower
-    restart: always
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30
+  # watchtower:
+  #   image: containrrr/watchtower
+  #   container_name: Watchtower
+  #   restart: always
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   command: --interval 30
 
 
 networks:
